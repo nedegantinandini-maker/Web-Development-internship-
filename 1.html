@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Development Environment Setup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Setting Up the Development Environment</h1>
+
+    <section>
+        <h2>🎯 Objective</h2>
+        <ul>
+            <li>Set up a local development environment for PHP and MySQL</li>
+            <li>Configure version control using Git and GitHub</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>🛠 Steps</h2>
+
+        <div class="step">
+            <h3>1. Install Local Server</h3>
+            <p>Install XAMPP, WAMP, or MAMP and run Apache & MySQL.</p>
+            <button onclick="showMessage('Local server installed successfully!')">Verify</button>
+        </div>
+
+        <div class="step">
+            <h3>2. Install Code Editor</h3>
+            <p>Use Visual Studio Code or Sublime Text with PHP extensions.</p>
+            <button onclick="showMessage('Editor configured!')">Configure</button>
+        </div>
+
+        <div class="step">
+            <h3>3. Setup Git & GitHub</h3>
+            <p>Install Git, create a GitHub account, and make your first commit.</p>
+            <button onclick="showMessage('Git repository initialized!')">Initialize</button>
+        </div>
+    </section>
+
+    <p id="output"></p>
+</div>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h2 {
+    color: #16a085;
+}
+
+.step {
+    background: #ecf0f1;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+button {
+    background: #16a085;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #138d75;
+}
+
+#output {
+    text-align: center;
+    font-weight: bold;
+    color: #2980b9;
+    margin-top: 20px;
+}
+</style>
+<script src="script.js">
+function showMessage(message) {
+    document.getElementById("output").innerText = message;
+}
+</script>
+</body>
+</html>
